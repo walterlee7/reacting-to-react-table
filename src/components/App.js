@@ -18,7 +18,8 @@ class App extends Component {
             age: 36
         }, {
             name: 'Samuel Roy',
-            age: 56
+            age: 56,
+            time: 1200,
         }, {
             name: 'Rima Soy',
             age: 28
@@ -39,6 +40,10 @@ class App extends Component {
             {
                 Header: 'ID',
                 accessor: 'id'
+            },
+            {
+                Header: 'Time',
+                accessor: 'time'
             },
         ]
 
