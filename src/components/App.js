@@ -7,10 +7,12 @@ class App extends Component {
     render() {
         const data = [{
             name: 'Roy Agasthyan',
-            age: 26
+            age: 26,
+            id: 0,
         }, {
             name: 'Sam Thomason',
-            age: 22
+            age: 22,
+            id: 1,
         }, {
             name: 'Michael Jackson',
             age: 36
@@ -25,13 +27,20 @@ class App extends Component {
             age: 28
         }]
 
-        const columns = [{
-            Header: 'Name',
-            accessor: 'name'
-        }, {
-            Header: 'Age',
-            accessor: 'age'
-        }]
+        const columns = [
+            {
+                Header: 'Name',
+                accessor: 'name'
+            },
+            {
+                Header: 'Age',
+                accessor: 'age'
+            },
+            {
+                Header: 'ID',
+                accessor: 'id'
+            },
+        ]
 
         return (
             <div>
