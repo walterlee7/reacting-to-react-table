@@ -29,6 +29,19 @@ class App extends Component {
             age: 28
         }]
 
+        const data2 = [{
+            name: 'Roy Rogers',
+            age: 26,
+            id: 0,
+        }, {
+            name: 'Sam Adams',
+            age: 22,
+            id: 1,
+        }, {
+            name: 'Jack Daniels',
+            age: 36
+        }]
+
         const columns = [
             {
                 Header: 'Name',
@@ -63,7 +76,8 @@ class App extends Component {
                     pageSizeOptions={[3, 6]}
                 />
                 <ReactTable
-                    data={data}
+                    style={{ backgroundColor: 'purple' }}
+                    data={data2}
                     columns={columns}
                     defaultPageSize={3}
                     pageSizeOptions={[3, 6]}
