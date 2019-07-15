@@ -84,6 +84,7 @@ class App extends Component {
                     pageSizeOptions={[3, 6]}
                 />
                 <ReactTable
+                    style={{ backgroundColor: '#F01001', padding: 100 }}
                     data={data}
                     columns={columns}
                     defaultPageSize={3}
