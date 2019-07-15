@@ -2,6 +2,10 @@ body {
     background-color: rgba(169, 247, 253, 0.596);
 }
 
+#table {
+    background-color: pink;
+}
+
 .ReactTable {
     position: relative;
     display: -webkit-box;

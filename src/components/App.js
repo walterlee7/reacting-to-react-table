@@ -95,16 +95,17 @@ class App extends Component {
                     columns={columns}
                     defaultPageSize={3}
                     pageSizeOptions={[3, 6]}
-                /><ReactTable
-                    data={data}
-                    columns={columns}
-                    defaultPageSize={3}
-                    pageSizeOptions={[3, 6]}
                 />
+                <div id="table">
+                    <ReactTable
+                        data={data}
+                        columns={columns}
+                        defaultPageSize={4}
+                        pageSizeOptions={[3, 6]}
+                    />
+                </div>
             </div>
-
         )
-
     }
 }
 
