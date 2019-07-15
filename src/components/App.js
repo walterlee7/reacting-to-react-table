@@ -70,6 +70,7 @@ class App extends Component {
                     pageSizeOptions={[3, 6]}
                 />
                 <ReactTable
+                    style={{ textAlign: 'center' }}
                     data={data}
                     columns={columns}
                     defaultPageSize={3}
