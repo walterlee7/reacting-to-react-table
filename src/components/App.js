@@ -80,6 +80,16 @@ class App extends Component {
                     columns={columns}
                     defaultPageSize={3}
                     pageSizeOptions={[3, 6]}
+                    SubComponent={row => {
+                        return (
+                            <div>
+                                {row.original.name}
+                                <br /> <br />
+                                {row.original.age}
+                                {console.log(row)}
+                            </div>
+                        )
+                    }}
                 />
 
                 <div id="data-2">
