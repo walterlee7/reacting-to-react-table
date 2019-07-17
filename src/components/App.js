@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import ReactTable from "react-table";
+import FoldableTableHOC from "react-table/lib/hoc/foldableTable";
 import './App.css';
 //import "react-table/react-table.css";
+
+const FoldableTable = FoldableTableHOC(ReactTable);
 
 class App extends Component {
 
@@ -131,6 +134,34 @@ class App extends Component {
                         pageSizeOptions={[3, 6]}
                     />
                 </div>
+
+                <FoldableTable
+                    data={data}
+                    columns={[{
+                        Header: "Name",
+                        foldable: true,
+                        columns: [{
+                            Header: 'Name',
+                            accessor: 'name'
+                        },
+                        {
+                            Header: 'Age',
+                            accessor: 'age'
+                        },]
+                    }, {
+                        Header: "Info",
+                        foldable: true,
+                        columns: [{
+                            Header: 'ID',
+                            accessor: 'id'
+                        },
+                        {
+                            Header: 'Time',
+                            accessor: 'time'
+                        }]
+                    }]
+                    }
+                />
             </div>
         )
     }
