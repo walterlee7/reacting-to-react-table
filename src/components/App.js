@@ -100,6 +100,13 @@ class App extends Component {
                 />
 
                 <ReactTable
+                    getTrProps={(state, rowInfo, column) => {
+                        return {
+                            style: {
+                                background: rowInfo.row.age > 30 ? 'green' : 'red'
+                            }
+                        }
+                    }}
                     data={data}
                     columns={columns}
                     defaultPageSize={3}
