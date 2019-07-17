@@ -42,24 +42,28 @@ class App extends Component {
             age: 36
         }]
 
-        const columns = [
-            {
-                Header: 'Name',
-                accessor: 'name'
-            },
-            {
-                Header: 'Age',
-                accessor: 'age'
-            },
-            {
-                Header: 'ID',
-                accessor: 'id'
-            },
-            {
-                Header: 'Time',
-                accessor: 'time'
-            },
-        ]
+        const columns = [{
+            Header: 'Reacting to react-table',
+            headerClassName: 'react-table-header-group',
+            columns: [
+                {
+                    Header: 'Name',
+                    accessor: 'name'
+                },
+                {
+                    Header: 'Age',
+                    accessor: 'age'
+                },
+                {
+                    Header: 'ID',
+                    accessor: 'id'
+                },
+                {
+                    Header: 'Time',
+                    accessor: 'time'
+                },
+            ]
+        }]
 
         return (
             <div>
