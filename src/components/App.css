@@ -3,7 +3,11 @@ body {
 }
 
 #table {
-    background-color: pink;
+    background-color: rgb(255, 238, 192);
+}
+
+#data-2 {
+    background-color: rgb(72, 72, 240);
 }
 
 .ReactTable {

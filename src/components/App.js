@@ -73,6 +73,7 @@ class App extends Component {
                     defaultPageSize={3}
                     pageSizeOptions={[3, 6]}
                 />
+
                 <ReactTable
                     style={{ textAlign: 'center' }}
                     data={data}
@@ -80,13 +81,16 @@ class App extends Component {
                     defaultPageSize={3}
                     pageSizeOptions={[3, 6]}
                 />
-                <ReactTable
-                    style={{ backgroundColor: 'purple' }}
-                    data={data2}
-                    columns={columns}
-                    defaultPageSize={3}
-                    pageSizeOptions={[3, 6]}
-                />
+
+                <div id="data-2">
+                    <ReactTable
+                        data={data2}
+                        columns={columns}
+                        defaultPageSize={3}
+                        pageSizeOptions={[3, 6]}
+                    />
+                </div>
+
                 <ReactTable
                     style={{ backgroundColor: '#F01001', padding: 100 }}
                     data={data}
@@ -94,12 +98,14 @@ class App extends Component {
                     defaultPageSize={3}
                     pageSizeOptions={[3, 6]}
                 />
+
                 <ReactTable
                     data={data}
                     columns={columns}
                     defaultPageSize={3}
                     pageSizeOptions={[3, 6]}
                 />
+
                 <div id="table">
                     <ReactTable
                         data={data}
