@@ -3,12 +3,15 @@ import ReactTable from "react-table";
 import FoldableTableHOC from "react-table/lib/hoc/foldableTable";
 import TreeTableHOC from "react-table/lib/hoc/treeTable";
 import SelectTableHOC from "react-table/lib/hoc/selectTable";
+//import AdvancedExpandTableHOC from "react-table/lib/hoc/advancedExpandTable";
+import AdvancedExpandTableHOC from './AdvancedExpandTableHOC';
 import './App.css';
 //import "react-table/react-table.css";
 
 const FoldableTable = FoldableTableHOC(ReactTable);
 const TreeTable = TreeTableHOC(ReactTable);
 const SelectTable = SelectTableHOC(ReactTable);
+const AdvancedExpandTable = AdvancedExpandTableHOC(ReactTable);
 
 class App extends Component {
 
@@ -196,6 +199,34 @@ class App extends Component {
                 />
 
                 <SelectTable
+                    data={data}
+                    columns={[{
+                        Header: "Name",
+                        foldable: true,
+                        columns: [{
+                            Header: 'Name',
+                            accessor: 'name'
+                        },
+                        {
+                            Header: 'Age',
+                            accessor: 'age'
+                        },]
+                    }, {
+                        Header: "Info",
+                        foldable: true,
+                        columns: [{
+                            Header: 'ID',
+                            accessor: 'id'
+                        },
+                        {
+                            Header: 'Time',
+                            accessor: 'time'
+                        }]
+                    }]
+                    }
+                />
+
+                <AdvancedExpandTable
                     data={data}
                     columns={[{
                         Header: "Name",
