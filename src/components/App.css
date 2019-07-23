@@ -6,6 +6,12 @@ body {
     background-color: rgb(255, 238, 192);
 }
 
+#title {
+    padding: 1em;
+    text-align: center;
+    background-color: gold;
+}
+
 #data-2 {
     background-color: rgb(72, 72, 240);
 }

@@ -167,6 +167,7 @@ class App extends Component {
                     }
                 />
 
+                <div id="title">Tree Table</div>
                 <TreeTable
                     data={data}
                     columns={[{
