@@ -139,6 +139,7 @@ class App extends Component {
                     />
                 </div>
 
+                <div id="title">Foldable Table</div>
                 <FoldableTable
                     data={data}
                     columns={[{
@@ -196,6 +197,7 @@ class App extends Component {
                     }
                 />
 
+                <div id="title">Select Table</div>
                 <SelectTable
                     data={data}
                     columns={[{
