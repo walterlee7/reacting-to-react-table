@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/reacting-to-react-table/static/css/main.175199be.chunk.css",
+    "main.js": "/reacting-to-react-table/static/js/main.9b92468b.chunk.js",
+    "main.js.map": "/reacting-to-react-table/static/js/main.9b92468b.chunk.js.map",
+    "runtime~main.js": "/reacting-to-react-table/static/js/runtime~main.441154ce.js",
+    "runtime~main.js.map": "/reacting-to-react-table/static/js/runtime~main.441154ce.js.map",
+    "static/js/2.dbd14753.chunk.js": "/reacting-to-react-table/static/js/2.dbd14753.chunk.js",
+    "static/js/2.dbd14753.chunk.js.map": "/reacting-to-react-table/static/js/2.dbd14753.chunk.js.map",
+    "index.html": "/reacting-to-react-table/index.html",
+    "precache-manifest.8267885e3b11a2bb9ee54529e081cca0.js": "/reacting-to-react-table/precache-manifest.8267885e3b11a2bb9ee54529e081cca0.js",
+    "service-worker.js": "/reacting-to-react-table/service-worker.js",
+    "static/css/main.175199be.chunk.css.map": "/reacting-to-react-table/static/css/main.175199be.chunk.css.map",
+    "static/media/left.svg": "/reacting-to-react-table/static/media/left.50f7c00f.svg",
+    "static/media/right.svg": "/reacting-to-react-table/static/media/right.c2fed7c9.svg"
+  }
+}
