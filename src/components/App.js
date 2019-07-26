@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import ReactTable from "react-table";
 import FoldableTableHOC from "react-table/lib/hoc/foldableTable";
-import TreeTableHOC from "react-table/lib/hoc/treeTable";
 import SelectTableHOC from "react-table/lib/hoc/selectTable";
 import './App.css';
 //import "react-table/react-table.css";
 
 const FoldableTable = FoldableTableHOC(ReactTable);
-const TreeTable = TreeTableHOC(ReactTable);
 const SelectTable = SelectTableHOC(ReactTable);
 
 class App extends Component {
@@ -25,8 +23,36 @@ class App extends Component {
             name: 'Michael Jackson',
             age: 36
         }, {
+            name: 'A Roy',
+            age: 56,
+            time: 1200,
+        }, {
             name: 'Samuel Roy',
             age: 56,
+            time: 120,
+        }, {
+            name: 'Sam Roy',
+            age: 24,
+            time: 100,
+        }, {
+            name: 'Samuel Roy',
+            age: 57,
+            time: 120,
+        }, {
+            name: 'Samuel Roy',
+            age: 44,
+            time: 1200,
+        }, {
+            name: 'L Roy',
+            age: 56,
+            time: 120,
+        }, {
+            name: 'S Roy',
+            age: 58,
+            time: 100,
+        }, {
+            name: 'Fam Roy',
+            age: 52,
             time: 1200,
         }, {
             name: 'Rima Soy',
@@ -141,35 +167,6 @@ class App extends Component {
 
                 <div id="title">Foldable Table</div>
                 <FoldableTable
-                    data={data}
-                    columns={[{
-                        Header: "Name",
-                        foldable: true,
-                        columns: [{
-                            Header: 'Name',
-                            accessor: 'name'
-                        },
-                        {
-                            Header: 'Age',
-                            accessor: 'age'
-                        },]
-                    }, {
-                        Header: "Info",
-                        foldable: true,
-                        columns: [{
-                            Header: 'ID',
-                            accessor: 'id'
-                        },
-                        {
-                            Header: 'Time',
-                            accessor: 'time'
-                        }]
-                    }]
-                    }
-                />
-
-                <div id="title">Tree Table</div>
-                <TreeTable
                     data={data}
                     columns={[{
                         Header: "Name",
